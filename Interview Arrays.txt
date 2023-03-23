@@ -1,0 +1,176 @@
+
+/**
+ * Algorithm
+Declare and initialize an array.
+Duplicate elements can be found using two loops. The outer loop will iterate through the array from 0 to length of the array. The outer loop will select an element. The inner loop will be used to compare the selected element with the rest of the elements of the array.
+If a match is found which means the duplicate element is found then, display the element.
+ * @author shashavali
+ *
+ */
+//Q. Program to print the duplicate elements of an array.
+public class DuplicateArray {
+
+	public static void main(String[] args) {
+int a[] = {1,2,3,4,7,9,1,2,3};
+//declare a variable
+
+
+for(int i=0;i<a.length;i++) {
+
+//to retrive elements one by one 
+
+
+	for(int j=i+1;j<a.length;j++) {
+
+//to compare one element to next elements 
+
+
+		if(a[i]==a[j]) {
+
+//two two elements
+
+			System.out.println(a[i]);
+		}
+	}
+}
+	}
+
+}
+
+
+
+package com.shasha.it;
+
+public class FindDuplicateElementsInArray {
+
+	public static void main(String[] args) {
+int a[]= {2,4,5,7,8,1,2,3,4};
+//declare an array
+for(int i=0;i<a.length;i++) {
+	int count =0;
+
+	//iterate elements one by one
+	for(int j=0;j<a.length;j++) {
+		//comparing elements in i==j
+		if(a[i]==a[j]) {
+			count++;
+			
+		}
+		
+	}
+	if(count>1) {
+		System.out.println(a[i] + " duplicates/repeated elements  elements ");
+	}
+}
+	}
+
+}
+/**
+ 2 duplicates/repeated elements  elements 
+4 duplicates/repeated elements  elements 
+2 duplicates/repeated elements  elements 
+4 duplicates/repeated elements  elements 
+
+*/
+
+Q. Program to print the unique  elements of an array ?
+sol:
+
+package com.shasha.it;
+
+public class FindDuplicateElementsInArray {
+
+	public static void main(String[] args) {
+int a[]= {2,4,5,7,8,1,2,3,4};
+//declare an array
+for(int i=0;i<a.length;i++) {
+	int count =0;
+
+	//iterate elements one by one
+	for(int j=0;j<a.length;j++) {
+		//comparing elements in i==j
+		if(a[i]==a[j]) {
+			count++;
+			
+		}
+		
+	}
+	if(count==1) {
+		System.out.println(a[i] + " unique elements  elements ");
+	}
+}
+	}
+
+}
+/**
+5 unique elements  elements 
+7 unique elements  elements 
+8 unique elements  elements 
+1 unique elements  elements 
+3 unique elements  elements 
+
+*/
+
+
+
+Q) Write a Java program to find second largest element in an array of integers?
+
+sol;
+
+
+
+package com.school.it;
+
+import java.util.Arrays;
+
+public class Sec_Highest {
+
+	public static void main(String[] args) {
+int a[]= {9,6,5,4,8,12};
+int size=a.length;
+for(int i=0;i<a.length;i++) {
+	for(int j=i+1;j<a.length;j++) {
+		if(a[i]>a[j]) {
+			int temp =a[i];
+			a[i]=a[j];
+			a[j]=temp;
+		}
+	}
+}
+System.out.println(a[size-1] + " Highest value");
+System.out.println(a[size-2] + " second highest");
+System.out.println(" min value  "  + a[0]);
+System.out.println("second min value "+ a[1]);
+	}
+
+}
+/**
+ * 12 Highest value
+9 second highest
+ min value  4
+second min value 5
+*/
+
+(or)
+package com.school.it;
+
+import java.util.Arrays;
+
+public class SortMethodSecond_max {
+
+	public static void main(String[] args) {
+
+		int a[]= {7,8,9,3,5,2,66};
+		int size=a.length;
+		Arrays.sort(a);
+		System.out.println(a[size-1]+" last highest value");
+		System.out.println(a[size-2]+ " second highest value");
+	}
+
+}
+
+/**
+66 last highest value
+9 second highest value
+*/
+

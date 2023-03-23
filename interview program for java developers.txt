@@ -1,0 +1,250 @@
+Q) find given number is prime ?
+sol:
+
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+Scanner sc = new Scanner (System.in);
+//create scanner class obj and take the input from keyboard
+System.out.println(" Enter a number");
+int num= sc.nextInt();
+boolean flag =true;
+//we are considering given number is prime and storing in flag variable
+for(int i=2;i<num/2;i++) {
+	//we are initializing i=2 to and its half
+	if(num % i ==0) {
+		//num is multiplication by loop iteration
+		flag = false;
+		//if given number is false then break  the loop
+		break;
+	}
+}
+if(flag==true) {
+	System.out.println(" is prime number");
+}else {
+	System.out.println(" is not a prime");
+}
+	}
+
+}
+
+
+
+Q) find  prime number in between  two number ?
+sol:
+
+package com.school;
+
+import java.util.Scanner;
+
+public class PrimeNumbersInBetween {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter  starting number");
+		int num =sc.nextInt();
+		System.out.println("enter last number");
+		int num1 = sc.nextInt();
+		for(int i = num; i <= num1; i++) {
+			//int count =0;
+
+			boolean flag =true;
+			for(int j =2;j <= i/2; j++) {
+				if(i % j == 0) {
+					//count++;
+					flag=false;
+				break;
+				}//if bock end
+			}//inner loop end
+			if(flag==true &&   i != 1) {
+			//if(count<2 &&  i != 1) {
+				System.out.println(" Prime number are : "  +   i);
+		}//outer loop end
+		
+		}
+	}
+
+}
+/**
+ * Enter  starting number
+1
+enter last number
+100
+ Prime number are : 2
+ Prime number are : 3
+ Prime number are : 5
+ Prime number are : 7
+ Prime number are : 11
+ Prime number are : 13
+ Prime number are : 17
+ Prime number are : 19
+ Prime number are : 23
+ Prime number are : 29
+ Prime number are : 31
+ Prime number are : 37
+ Prime number are : 41
+ Prime number are : 43
+ Prime number are : 47
+ Prime number are : 53
+ Prime number are : 59
+ Prime number are : 61
+ Prime number are : 67
+ Prime number are : 71
+ Prime number are : 73
+ Prime number are : 79
+ Prime number are : 83
+ Prime number are : 89
+ Prime number are : 97
+*/
+
+Q) find Given Number is even or odd number ?
+sol:
+
+
+package com.shasha.it;
+
+import java.util.Scanner;
+
+public class EvenNumber {
+
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+System.out.println("Enter a number");
+int num = sc.nextInt();
+
+if(num %  2 == 0) {
+	System.out.println(" Odd Number "           );
+}else {
+	System.out.println("Even Number"    );
+}
+
+	}
+
+}
+
+
+Q)  find even Number in between 1 to 50 ?
+sol:
+
+
+package com.shasha.it;
+
+import java.util.Scanner;
+
+public class EvenNumber {
+
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+System.out.println("Enter a number");
+int num = sc.nextInt();
+System.out.println("Enter a number");
+int num1 = sc.nextInt();
+for(int i=num;i<num1;i++) {
+if(i  %  2  == 0) {
+	
+	System.out.println(" Even Number "  +    i);
+}
+
+}
+
+}
+}
+/**
+Enter a number
+1
+Enter a number
+50
+ Even Number 2
+ Even Number 4
+ Even Number 6
+ Even Number 8
+ Even Number 10
+ Even Number 12
+ Even Number 14
+ Even Number 16
+ Even Number 18
+ Even Number 20
+ Even Number 22
+ Even Number 24
+ Even Number 26
+ Even Number 28
+ Even Number 30
+ Even Number 32
+ Even Number 34
+ Even Number 36
+ Even Number 38
+ Even Number 40
+ Even Number 42
+ Even Number 44
+ Even Number 46
+ Even Number 48
+ 
+ */
+ 
+
+Q)  find odd Number in between 1 to 50 ?
+
+sol:
+
+Enter a number
+1
+Enter a number
+50
+ odd Number 1
+ odd Number 3
+ odd Number 5
+ odd Number 7
+ odd Number 9
+ odd Number 11
+ odd Number 13
+ odd Number 15
+ odd Number 17
+ odd Number 19
+ odd Number 21
+ odd Number 23
+ odd Number 25
+ odd Number 27
+ odd Number 29
+ odd Number 31
+ odd Number 33
+ odd Number 35
+ odd Number 37
+ odd Number 39
+ odd Number 41
+ odd Number 43
+ odd Number 45
+ odd Number 47
+ odd Number 49
+
+
+
+Q) find given number is odd or not ?
+sol:
+
+package com.shasha.it;
+
+import java.util.Scanner;
+
+public class EvenNumber {
+
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+System.out.println("Enter a number");
+int num = sc.nextInt();
+for(int i=1;i<num;i++) {
+if(i  %  2  != 0)  {
+	System.out.println(" Odd Number "    );
+}
+
+	}
+
+}
+}/**
+Enter a number
+3
+ Odd Number 
+*/
